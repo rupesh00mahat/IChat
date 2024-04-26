@@ -1,0 +1,129 @@
+/* Login */
+*{
+    margin: 0;
+    padding: 0;
+}
+html, body{
+    background-color: #A8BCFF;
+    font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+#login-screen, #register-screen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+.login-wrapper, .register-wrapper{
+    width: 300px;
+    margin: 100px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);   
+}
+.login-wrapper h2, .register-wrapper h2{
+    font-size: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.login-wrapper p, .register-wrapper p{
+    text-align: center;
+    font-size: 15px;
+}
+form input[type='text'], form input[type='email'], form input[type='password']{
+    padding: 10px 20px;
+    margin: 10px;
+    border: 1px solid white;
+    border-bottom: 1px solid #A8BCFF;
+    font-size: 16px;
+}
+form input{
+    padding: 10px 20px;
+}
+form input[type='file']{
+    color: transparent;
+}
+form label>svg{
+    height: 30px;
+    width: 30px;
+    fill: #A8BCFF;
+}
+form label{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0;
+}
+form label>span{
+    font-size: 15px;
+    color: #A8BCFF;
+}
+form input:focus{
+    border: 1px solid white;
+    border-bottom: 1px solid #A8BCFF;
+    outline: none;
+}
+form input[type='submit']{
+    background-color: #7188D8;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 10px 0;
+}
+/* Home */
+#ichat-home{
+    display: flex;
+
+}
+#sidebar{
+    flex: 1;
+}
+#message-area{
+    flex: 4;
+}
+.sidebar-header{
+    background-color: #2F2C53;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+.sidebar-header-user-info{
+    display: flex;
+    gap: 10px;
+}
+.logout-button{
+    background-color: #5F5B8F;
+    color: white;
+    padding: 5px;
+    border: none;
+}
+.user-name{
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-weight: 400;
+}
+#user-list{
+    background-color: #3E3C62;
+    color: white;
+    padding: 10px;
+}
+.message-area-header{
+    background-color: #5F5B8F;
+    padding: 15px;
+}
+.messsage-area-texts{
+    background-color: #DDDCF7;
+    padding: 20px;
+}
