@@ -9,6 +9,9 @@ html, body{
   font-weight: 400;
   font-style: normal;
 }
+html, body, #root, .App, #ichat-home{
+    height: 100vh;
+}
 #login-screen, #register-screen{
     display: flex;
     justify-content: center;
@@ -83,7 +86,7 @@ form input[type='submit']{
 /* Home */
 #ichat-home{
     display: flex;
-
+    
 }
 #sidebar{
     flex: 1;
@@ -126,4 +129,72 @@ form input[type='submit']{
 .messsage-area-texts{
     background-color: #DDDCF7;
     padding: 20px;
+}
+/*  */
+#user-list{
+    height: 100%;
+}
+.user-info-avatar{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.user-info{
+    display: flex;
+    gap: 20px;
+    border-bottom: 1px solid #4C4A6C;
+    padding: 10px;
+}
+.users{
+    margin: 10px 0px;
+}
+.message{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 5px;
+    margin: 20px 0px;
+}
+.message-content{
+    padding: 10px 15px;
+    background-color: white;
+    border-radius: 10px;
+}
+.message-avatar{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+.user-input-area{
+    background-color: white;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.user-input-field{
+    width: 90%;
+    height: 50px;
+    font-size: 18px;
+    outline: none;
+    border: none;
+}
+.user-file-upload{
+    height: 50px;
+    width: 100px;
+    background: none;
+}
+
+.upload-label > svg{
+    height: 40px;
+
+    width: 40px;
+}
+input[type='submit']{
+    
+    border: none;
+    padding: 10px 15px;
+    color: white;
+    background-color: #8da4f1;
+    cursor: pointer;
 }
